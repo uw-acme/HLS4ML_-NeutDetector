@@ -1,0 +1,86 @@
+Backend: Vivado
+Board: null
+ClockPeriod: 3.33
+HLSConfig:
+  LayerName:
+    conv1d:
+      ConvImplementation: encoded
+      Precision:
+        bias: ap_fixed<16,6>
+        result: ap_fixed<16,6>
+        weight: ap_fixed<16,6>
+      ReuseFactor: 48
+    conv1d_1:
+      ConvImplementation: encoded
+      Precision:
+        bias: ap_fixed<16,6>
+        result: ap_fixed<16,6>
+        weight: ap_fixed<16,6>
+      ReuseFactor: 48
+    conv1d_1_relu:
+      ConvImplementation: encoded
+      Precision: ap_fixed<16,6>
+      ReuseFactor: 48
+      table_size: 1024
+      table_t: ap_fixed<18,8>
+    conv1d_2:
+      ConvImplementation: encoded
+      Precision:
+        bias: ap_fixed<16,6>
+        result: ap_fixed<16,6>
+        weight: ap_fixed<16,6>
+      ReuseFactor: 48
+    conv1d_2_relu:
+      ConvImplementation: encoded
+      Precision: ap_fixed<16,6>
+      ReuseFactor: 48
+      table_size: 1024
+      table_t: ap_fixed<18,8>
+    conv1d_input:
+      ConvImplementation: encoded
+      Precision:
+        result: ap_fixed<16,6>
+      ReuseFactor: 48
+    conv1d_relu:
+      ConvImplementation: encoded
+      Precision: ap_fixed<16,6>
+      ReuseFactor: 48
+      table_size: 1024
+      table_t: ap_fixed<18,8>
+    global_max_pooling1d:
+      ConvImplementation: encoded
+      Precision: ap_fixed<16,6>
+      ReuseFactor: 48
+    max_pooling1d:
+      ConvImplementation: encoded
+      Precision: ap_fixed<16,6>
+      ReuseFactor: 48
+    max_pooling1d_1:
+      ConvImplementation: encoded
+      Precision: ap_fixed<16,6>
+      ReuseFactor: 48
+    wavrec_out:
+      ConvImplementation: encoded
+      Precision:
+        bias: ap_fixed<16,6>
+        result: ap_fixed<16,6>
+        weight: ap_fixed<16,6>
+      ReuseFactor: 48
+    wavrec_out_sigmoid:
+      ConvImplementation: encoded
+      Precision: ap_fixed<16,6>
+      ReuseFactor: 48
+      table_size: 1024
+      table_t: ap_fixed<18,8>
+  Model:
+    Precision: ap_fixed<16,6>
+    ReuseFactor: 1
+    Strategy: Resource
+IOType: io_stream
+InputData: null
+KerasModel: !keras_model 'uplane-test/keras_model.h5'
+OutputDir: uplane-test
+OutputPredictions: null
+ProjectName: myproject
+Stamp: eECeBC9A
+XilinxPart: xc7vx690t-ffg1761-2
