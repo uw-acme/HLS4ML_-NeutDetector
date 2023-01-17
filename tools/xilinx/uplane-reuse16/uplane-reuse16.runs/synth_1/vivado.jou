@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Jan 17 12:30:11 2023
+# Process ID: 39760
+# Current directory: C:/Users/steph/OneDrive/Desktop/HLS4ML_NeutDetector/tools/xilinx/uplane-reuse16/uplane-reuse16.runs/synth_1
+# Command line: vivado.exe -log myproject.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source myproject.tcl
+# Log file: C:/Users/steph/OneDrive/Desktop/HLS4ML_NeutDetector/tools/xilinx/uplane-reuse16/uplane-reuse16.runs/synth_1/myproject.vds
+# Journal file: C:/Users/steph/OneDrive/Desktop/HLS4ML_NeutDetector/tools/xilinx/uplane-reuse16/uplane-reuse16.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source myproject.tcl -notrace
