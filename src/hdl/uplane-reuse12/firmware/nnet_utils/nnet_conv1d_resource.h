@@ -8,6 +8,7 @@ namespace nnet {
 
 template<class data_T, typename CONFIG_T>
 void im2col_1d(data_T data[CONFIG_T::in_width * CONFIG_T::n_chan], data_T data_col[CONFIG_T::filt_width * CONFIG_T::n_chan * CONFIG_T::out_width]) {
+    std::cout << "check 6" << std::endl;
     //int index = 0;
     for (int channel = CONFIG_T::n_chan; channel--; data += CONFIG_T::in_width) {
         #pragma HLS PIPELINE II=1 rewind
@@ -38,6 +39,7 @@ void conv_1d_full(
     typename CONFIG_T::bias_t   biases[CONFIG_T::n_filt]
 )
 {
+    std::cout << "check 5" << std::endl;
     data_T data_conv[CONFIG_T::filt_width * CONFIG_T::n_chan * CONFIG_T::out_width];
     data_T data_col[CONFIG_T::filt_width * CONFIG_T::n_chan];
     res_T res_col[CONFIG_T::n_filt];
@@ -63,6 +65,7 @@ void conv_1d_full(
 
 template<class data_T, typename CONFIG_T>
 void im2col_1d_cf_idx(data_T data[CONFIG_T::in_width * CONFIG_T::n_chan], data_T data_col[CONFIG_T::filt_width * CONFIG_T::n_chan], const int col) {
+    std::cout << "check 4" << std::endl;
     ChannelLoop:
     for (int channel = 0; channel < CONFIG_T::n_chan; channel++) {
 		//#pragma HLS UNROLL
@@ -84,6 +87,7 @@ void im2col_1d_cf_idx(data_T data[CONFIG_T::in_width * CONFIG_T::n_chan], data_T
 
 template<class data_T, typename CONFIG_T>
 void im2col_1d_cf(data_T data[CONFIG_T::in_width * CONFIG_T::n_chan], data_T data_col[CONFIG_T::n_chan * CONFIG_T::filt_width], const int col) {
+    std::cout << "check 3" << std::endl;
     int index = 0;
     ChannelLoop:
     for (int channel = CONFIG_T::n_chan; channel--; data += CONFIG_T::in_width) {
@@ -111,6 +115,7 @@ void conv_1d_resource_cf(
     typename CONFIG_T::bias_t   biases[CONFIG_T::n_filt]
 )
 {
+    std::cout << "check 2" << std::endl;
     const int nin = CONFIG_T::n_chan * CONFIG_T::filt_width;
     const int nout = CONFIG_T::n_filt;
     const int rufactor = CONFIG_T::reuse_factor;
@@ -141,6 +146,7 @@ void conv_1d_resource_cf(
 
 template<class data_T, typename CONFIG_T>
 void im2col_1d_cl(data_T data[CONFIG_T::in_width * CONFIG_T::n_chan], data_T data_col[CONFIG_T::filt_width * CONFIG_T::n_chan], const int col) {
+    // std::cout << "check 1" << std::endl;  // WE KNOW IT IS GOING HERE
     int index = 0;
     KernelLoop:
     for (int kernel_col = 0; kernel_col < CONFIG_T::filt_width; kernel_col++) {
@@ -155,9 +161,14 @@ void im2col_1d_cl(data_T data[CONFIG_T::in_width * CONFIG_T::n_chan], data_T dat
             } else {
                 data_col[index] = 0;
             }
+            // // data_col is being updated in this loop
+            // std::cout << "data col: " << data_col[index] << "   at index: " << index << std::endl;
+            // // std::cout << "at index" << index << std::endl; // updating data_col at a given index
+            
             index++;
         }
     }
+    std::cout << "im2col_1d_cl looping finished here \n" << std::endl;
 }
 
 template<class data_T, class res_T, typename CONFIG_T>
@@ -168,7 +179,9 @@ void conv_1d_resource_cl(
     typename CONFIG_T::bias_t   biases[CONFIG_T::n_filt]
 )
 {
+    std::cout << "assume it WENT HERE" << std::endl;
     const int nin = CONFIG_T::n_chan * CONFIG_T::filt_width;
+    std::cout << nin << std::endl;
     const int nout = CONFIG_T::n_filt;
     const int rufactor = CONFIG_T::reuse_factor;
     const int block_factor = DIV_ROUNDUP(nin*nout, rufactor);
@@ -183,10 +196,11 @@ void conv_1d_resource_cl(
 
     #pragma HLS ARRAY_PARTITION variable=data_col complete
     #pragma HLS ARRAY_PARTITION variable=res_col complete
-
+    std::cout << "WENT INTO THE LOOP" << std::endl;
     ColLoop:
     for (int i = 0; i < CONFIG_T::out_width; i++) {
         #pragma HLS PIPELINE
+        // std::cout << i << std::endl; // my checker
         im2col_1d_cl<data_T, CONFIG_T>(data, data_col, i);
         dense_resource<data_T, res_T, typename CONFIG_T::mult_config>(data_col, res_col, weights, biases);
         for (int j = 0; j < CONFIG_T::n_filt; j++) {

@@ -57,6 +57,7 @@ T avg(T (&x)[N]){
 enum Pool_Op { Max, Average }; // L2Norm };
 template<typename T, int N, Pool_Op op>
 T pool_op(T (&x)[N]){
+  // std::cout << "goes to pool_op" << std::endl; 
 	switch(op){
 	case Max: return max<T, N>(x);
 	case Average: return avg(x);
@@ -73,6 +74,8 @@ T pad_val(){
   *- For max pooling, return the most negative value for the type.
   *- TODO this is not really generic, it assumes fixed point or integer T
   ---*/
+
+  std::cout << "goes to pad_val" << std::endl;
   switch(op){
     case Max:{ 
       T x = 0;
@@ -102,7 +105,7 @@ constexpr int pool_op_limit_1d() {
 
 template<class data_T, class res_T, typename CONFIG_T>
 void pooling1d_cl(data_T data[CONFIG_T::n_in * CONFIG_T::n_filt], res_T res[CONFIG_T::n_out * CONFIG_T::n_filt]) {
-
+  std::cout << "\n**continues to pooling (Max Pooling)** \n" << std::endl;
   // TODO partition the arrays according to the reuse factor
   const int limit = pool_op_limit_1d<CONFIG_T>();
   #pragma HLS ALLOCATION instances=pool_op limit=limit function
@@ -112,6 +115,7 @@ void pooling1d_cl(data_T data[CONFIG_T::n_in * CONFIG_T::n_filt], res_T res[CONF
     padded_width -= padded_width - (padded_width / CONFIG_T::stride_width * CONFIG_T::stride_width);
   }
 
+  std::cout << "calls on pool_op" << std::endl; 
   for(int ff = 0; ff < CONFIG_T::n_filt; ff++) {
     // Loop over input image x in steps of stride
     for(int ii = 0; ii < padded_width; ii += CONFIG_T::stride_width) {
@@ -140,10 +144,27 @@ void pooling1d_cl(data_T data[CONFIG_T::n_in * CONFIG_T::n_filt], res_T res[CONF
       }
 	  }
   }
+  std::cout << "pooling output" << std::endl;
+   for (int i = 0; i < 10; i++) {
+        std::string str = res[i].to_string();
+        // If the variable is 0 (formatted as 0) output all 0s
+        if (res[i] == 0) {
+            std::cout << "0b00000000000000000" << std::endl;
+        } else {
+            //Find where the decimal point is and sign extend to make sure it is the right length
+            if (str.find('.') < 9) {
+                str.insert(str.find('b')+1, 9 - str.find('.'), str.at(2));
+            }
+            // Remove the decimal
+            std::cout << str.erase(str.find('.'), 1) << std::endl;
+        }
+   }
+   std::cout << "\n" << std::endl;
 }
 
 template<class data_T, class res_T, typename CONFIG_T>
 void global_pooling1d_cl(data_T data[CONFIG_T::n_in * CONFIG_T::n_filt], res_T res[CONFIG_T::n_filt]) {
+  std::cout << "\n**Continues to Global Pooling (Global Max pooling)**\n" << std::endl;
   assert(CONFIG_T::pad_left == 0 && CONFIG_T::pad_right == 0);
   assert(CONFIG_T::pool_width == CONFIG_T::stride_width);
 
@@ -151,6 +172,7 @@ void global_pooling1d_cl(data_T data[CONFIG_T::n_in * CONFIG_T::n_filt], res_T r
   const int limit = pool_op_limit_1d<CONFIG_T>();
   #pragma HLS ALLOCATION instances=pool_op limit=limit function
 
+  std::cout << "calls on pool_op" << std::endl; 
   for(int ff = 0; ff < CONFIG_T::n_filt; ff++) {
     data_T pool[CONFIG_T::n_in];
     for(int jj = 0; jj < CONFIG_T::n_in; jj++) {
@@ -159,6 +181,23 @@ void global_pooling1d_cl(data_T data[CONFIG_T::n_in * CONFIG_T::n_filt], res_T r
   // do the pooling
   res[ff] = pool_op<data_T, CONFIG_T::n_in, CONFIG_T::pool_op>(pool);
   }
+
+  std::cout << "global pooling output" << std::endl;
+   for (int i = 0; i < 10; i++) {
+        std::string str = res[i].to_string();
+        // If the variable is 0 (formatted as 0) output all 0s
+        if (res[i] == 0) {
+            std::cout << "0b00000000000000000" << std::endl;
+        } else {
+            //Find where the decimal point is and sign extend to make sure it is the right length
+            if (str.find('.') < 9) {
+                str.insert(str.find('b')+1, 9 - str.find('.'), str.at(2));
+            }
+            // Remove the decimal
+            std::cout << str.erase(str.find('.'), 1) << std::endl;
+        }
+   }
+   std::cout << "\n" << std::endl;
 }
 
 struct pooling2d_config{

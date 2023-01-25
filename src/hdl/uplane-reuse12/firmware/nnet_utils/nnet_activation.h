@@ -68,6 +68,7 @@ void  linear(data_T data[CONFIG_T::n_in], res_T res[CONFIG_T::n_in])
 template<class data_T, class res_T, typename CONFIG_T>
 void  relu(data_T data[CONFIG_T::n_in], res_T res[CONFIG_T::n_in])
 {
+    std::cout << "\n**Continues to the RELU activation**\n" << std::endl;
     if (CONFIG_T::io_type == io_parallel){
         #pragma HLS PIPELINE
     }
@@ -81,11 +82,29 @@ void  relu(data_T data[CONFIG_T::n_in], res_T res[CONFIG_T::n_in])
         if (datareg > 0) res[ii] = datareg;
         else res[ii] = 0;
     }
+
+    std::cout << "RELU output" << std::endl;
+   for (int i = 0; i < 10; i++) {
+        std::string str = res[i].to_string();
+        // If the variable is 0 (formatted as 0) output all 0s
+        if (res[i] == 0) {
+            std::cout << "0b00000000000000000" << std::endl;
+        } else {
+            //Find where the decimal point is and sign extend to make sure it is the right length
+            if (str.find('.') < 9) {
+                str.insert(str.find('b')+1, 9 - str.find('.'), str.at(2));
+            }
+            // Remove the decimal
+            std::cout << str.erase(str.find('.'), 1) << std::endl;
+        }
+   }
+   std::cout << "\n" << std::endl;
 }
 
 template<class data_T, class res_T, int MAX_INT, typename CONFIG_T>
 void  relu_max(data_T data[CONFIG_T::n_in], res_T res[CONFIG_T::n_in])
 {
+    std:: cout << "does it go here?" << std::endl;
     if (CONFIG_T::io_type == io_parallel){
         #pragma HLS PIPELINE
     }
@@ -118,6 +137,7 @@ void  relu1(data_T data[CONFIG_T::n_in], res_T res[CONFIG_T::n_in])
 //       Sigmoid Activation
 // *************************************************
 inline float sigmoid_fcn_float(float input) {
+    
     return 1.0 / (1 + std::exp(-input));
 }
 
@@ -126,6 +146,7 @@ void init_sigmoid_table(typename CONFIG_T::table_t table_out[N_TABLE])
 {
     // Default logistic sigmoid function:
     //   result = 1/(1+e^(-x))
+    std::cout << "calls on sigmoid_fcn_float" << std::endl; // calls on this
     for (int ii = 0; ii < N_TABLE; ii++) {
         // First, convert from table index to X-value (signed 8-bit, range -8 to +8)
         float in_val = 2*8.0*(ii-float(N_TABLE)/2.0)/float(N_TABLE);
@@ -139,6 +160,7 @@ void init_sigmoid_table(typename CONFIG_T::table_t table_out[N_TABLE])
 template<class data_T, class res_T, typename CONFIG_T>
 void  sigmoid(data_T data[CONFIG_T::n_in], res_T res[CONFIG_T::n_in])
 {
+    std::cout << "\n**Continues to Sigmoid Activation layer (Final Output)**\n" << std::endl;
     // Initialize the lookup table
 #ifdef __HLS_SYN__
     bool initialized = false;
@@ -148,12 +170,14 @@ void  sigmoid(data_T data[CONFIG_T::n_in], res_T res[CONFIG_T::n_in])
     static typename CONFIG_T::table_t sigmoid_table[CONFIG_T::table_size];
 #endif
     if (!initialized) {
+        std::cout << "goes to init_sigmod_table" << std::endl;
         init_sigmoid_table<CONFIG_T, CONFIG_T::table_size>(sigmoid_table);
         initialized = true;
     }
 
     if (CONFIG_T::io_type == io_parallel){
         #pragma HLS PIPELINE
+        std::cout << "dont know what this is: #pragma HLS PIPELINE" << std::endl;
     }
 
     // Index into the lookup table based on data
@@ -169,6 +193,23 @@ void  sigmoid(data_T data[CONFIG_T::n_in], res_T res[CONFIG_T::n_in])
         if (index > CONFIG_T::table_size-1) index = CONFIG_T::table_size-1;
         res[ii] = (res_T) sigmoid_table[index];
     }
+
+    std::cout << "signmoid layer output" << std::endl;
+   for (int i = 0; i < 10; i++) {
+        std::string str = res[i].to_string();
+        // If the variable is 0 (formatted as 0) output all 0s
+        if (res[i] == 0) {
+            std::cout << "0b00000000000000000" << std::endl;
+        } else {
+            //Find where the decimal point is and sign extend to make sure it is the right length
+            if (str.find('.') < 9) {
+                str.insert(str.find('b')+1, 9 - str.find('.'), str.at(2));
+            }
+            // Remove the decimal
+            std::cout << str.erase(str.find('.'), 1) << std::endl;
+        }
+   }
+   std::cout << "\n" << std::endl;
 }
 
 // *************************************************

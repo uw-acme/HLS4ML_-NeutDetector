@@ -17,6 +17,7 @@
 //    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 #include <iostream>
+#include <string>
 
 #include "myproject.h"
 #include "parameters.h"
@@ -106,20 +107,52 @@ void myproject(
 int main(int argc, char** argv) {
    input_t inputVals[64];
     std::vector<float> inputVector = 
-    { 2, 1, 1, 1, 1, 1, 1, 1,
-    1, 1, 1, 1, 1, 1, 1, 1,
-    1, 1, 1, 1, 1, 1, 1, 1,
-    1, 1, 1, 1, 1, 1, 1, 1,
-    1, 1, 1, 1, 1, 1, 1, 1,
-    1, 1, 1, 1, 1, 1, 1, 1,
-    1, 1, 1, 1, 1, 1, 1, 1,
-    1, 1, 1, 1, 1, 1, 1, 2
+    {   2, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 2
     };
     nnet::copy_data<float, input_t, 0, N_INPUT_1_1*N_INPUT_2_1>(inputVector, inputVals);
    result_t outputVals[16];
    unsigned short const_size_in_1;
    unsigned short const_size_out_1;
+//    std::cout << "input values" << std::endl;
+//     for (int i = 0; i < 10; i++) {
+//         std::string str = inputVals[i].to_string();
+//         // If the variable is 0 (formatted as 0) output all 0s
+//         if (inputVals[i] == 0) {
+//             std::cout << "0b00000000000000000" << std::endl;
+//         } else {
+//         //Find where the decimal point is and sign extend to make sure it is the right length
+//             if (str.find('.') < 9) {
+//                 str.insert(str.find('b')+1, 9 - str.find('.'), str.at(2));
+//             }
+//             // Remove the decimal
+//             std::cout << str.erase(str.find('.'), 1) << std::endl;
+//         }
+//     }
+
    myproject(inputVals, outputVals, const_size_in_1, const_size_out_1);
-   std::cout << "hello" << std::endl;
+
+   std::cout << "The final output" << std::endl;
+   for (int i = 0; i < 10; i++) {
+        std::string str = outputVals[i].to_string();
+        // If the variable is 0 (formatted as 0) output all 0s
+        if (outputVals[i] == 0) {
+            std::cout << "0b00000000000000000" << std::endl;
+        } else {
+            //Find where the decimal point is and sign extend to make sure it is the right length
+            if (str.find('.') < 9) {
+                str.insert(str.find('b')+1, 9 - str.find('.'), str.at(2));
+            }
+            // Remove the decimal
+            std::cout << str.erase(str.find('.'), 1) << std::endl;
+        }
+   }
+   std::cout << "\n" << std::endl;
    return 0;
 } 

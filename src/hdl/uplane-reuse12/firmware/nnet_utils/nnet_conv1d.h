@@ -58,10 +58,48 @@ void conv_1d_cl(
     typename CONFIG_T::weight_t weights[CONFIG_T::filt_width * CONFIG_T::n_chan * CONFIG_T::n_filt],
     typename CONFIG_T::bias_t   biases[CONFIG_T::n_filt])
 {
+    std::cout << "Going into conv1d if statement" << std::endl;
     if (CONFIG_T::strategy == nnet::latency) {
+        std::cout << "went into latency" << std::endl;
         conv_1d_latency_cl<data_T, res_T, CONFIG_T>(data, res, weights, biases);
     } else {
+        std::cout << "went into resource" << std::endl;
+
+        // std::cout << "conv 1d input" << std::endl;
+        // for (int i = 0; i < 10; i++) {
+        //     std::string str = data[i].to_string();
+        //     // If the variable is 0 (formatted as 0) output all 0s
+        //     if (data[i] == 0) {
+        //         std::cout << "0b00000000000000000" << std::endl;
+        //     } else {
+        //     //Find where the decimal point is and sign extend to make sure it is the right length
+        //         if (str.find('.') < 9) {
+        //             str.insert(str.find('b')+1, 9 - str.find('.'), str.at(2));
+        //         }
+        //         // Remove the decimal
+        //         std::cout << str.erase(str.find('.'), 1) << std::endl;
+        //     }
+        // }
         conv_1d_resource_cl<data_T, res_T, CONFIG_T>(data, res, weights, biases);
+        
+        
+        /******************************************************/
+        std::cout << "conv1d output" << std::endl;
+        for (int i = 0; i < 10; i++) {
+            std::string str = res[i].to_string();
+            // If the variable is 0 (formatted as 0) output all 0s
+            if (res[i] == 0) {
+                std::cout << "0b00000000000000000" << std::endl;
+            } else {
+            //Find where the decimal point is and sign extend to make sure it is the right length
+                if (str.find('.') < 9) {
+                    str.insert(str.find('b')+1, 9 - str.find('.'), str.at(2));
+                }
+                // Remove the decimal
+                std::cout << str.erase(str.find('.'), 1) << std::endl;
+            }
+        }
+        std::cout << "\n" << std::endl;
     }
 }
 

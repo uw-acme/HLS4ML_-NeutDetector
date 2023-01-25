@@ -34,6 +34,8 @@ void dense_resource_rf_leq_nin(
     res_T  res[CONFIG_T::n_out],
     typename CONFIG_T::weight_t weights[CONFIG_T::n_in*CONFIG_T::n_out],
     typename CONFIG_T::bias_t   biases[CONFIG_T::n_out]) {
+    
+    std::cout << "calls leq_nin" << std::endl;
 
     const int rufactor = CONFIG_T::reuse_factor;
     const int multfactor = MIN(CONFIG_T::n_in,CONFIG_T::reuse_factor);
@@ -267,16 +269,38 @@ void dense_resource(
     res_T  res[CONFIG_T::n_out],
     typename CONFIG_T::weight_t weights[CONFIG_T::n_in*CONFIG_T::n_out],
     typename CONFIG_T::bias_t   biases[CONFIG_T::n_out]) {
+    
+    std::cout << "enters here" << std::endl;
 
     #pragma HLS INLINE region
 
     if (CONFIG_T::reuse_factor <= CONFIG_T::n_in) {
+        std::cout << "goes to leq_nin" << std::endl;
         dense_resource_rf_leq_nin<data_T, res_T, CONFIG_T>(data, res, weights, biases);
     } else if (CONFIG_T::reuse_factor % CONFIG_T::n_in == 0) {
+        std::cout << "goes to gt_nin_rem0" << std::endl;
         dense_resource_rf_gt_nin_rem0<data_T, res_T, CONFIG_T>(data, res, weights, biases);
     } else {
+        std::cout << "goes to gt_nin" << std::endl;
         dense_resource_rf_gt_nin<data_T, res_T, CONFIG_T>(data, res, weights, biases);
     }
+
+//     std::cout << "dense RESOURCE output" << std::endl;
+//    for (int i = 0; i < 10; i++) {
+//         std::string str = res[i].to_string();
+//         // If the variable is 0 (formatted as 0) output all 0s
+//         if (res[i] == 0) {
+//             std::cout << "0b00000000000000000" << std::endl;
+//         } else {
+//             //Find where the decimal point is and sign extend to make sure it is the right length
+//             if (str.find('.') < 9) {
+//                 str.insert(str.find('b')+1, 9 - str.find('.'), str.at(2));
+//             }
+//             // Remove the decimal
+//             std::cout << str.erase(str.find('.'), 1) << std::endl;
+//         }
+//    }
+//    std::cout << "\n" << std::endl;
 }
 
 }
