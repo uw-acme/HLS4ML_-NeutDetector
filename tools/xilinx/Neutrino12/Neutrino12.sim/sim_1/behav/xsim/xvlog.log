@@ -1,0 +1,153 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/Block_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Block_proc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/compute_global_pool_array_array_ap_fixed_64u_config10_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module compute_global_pool_array_array_ap_fixed_64u_config10_s
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/conv_1d_cl_array_array_ap_fixed_16u_config2_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_1d_cl_array_array_ap_fixed_16u_config2_s
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/conv_1d_cl_array_array_ap_fixed_16u_config2_s_outidx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_1d_cl_array_array_ap_fixed_16u_config2_s_outidx_rom
+INFO: [VRFC 10-311] analyzing module conv_1d_cl_array_array_ap_fixed_16u_config2_s_outidx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/conv_1d_cl_array_array_ap_fixed_16u_config2_s_w2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_1d_cl_array_array_ap_fixed_16u_config2_s_w2_V_rom
+INFO: [VRFC 10-311] analyzing module conv_1d_cl_array_array_ap_fixed_16u_config2_s_w2_V
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/conv_1d_cl_array_array_ap_fixed_32u_config5_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_1d_cl_array_array_ap_fixed_32u_config5_s
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/conv_1d_cl_array_array_ap_fixed_32u_config5_s_w5_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_1d_cl_array_array_ap_fixed_32u_config5_s_w5_V_rom
+INFO: [VRFC 10-311] analyzing module conv_1d_cl_array_array_ap_fixed_32u_config5_s_w5_V
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/conv_1d_cl_array_array_ap_fixed_64u_config8_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_1d_cl_array_array_ap_fixed_64u_config8_s
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/conv_1d_cl_array_array_ap_fixed_64u_config8_s_w8_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_1d_cl_array_array_ap_fixed_64u_config8_s_w8_V_rom
+INFO: [VRFC 10-311] analyzing module conv_1d_cl_array_array_ap_fixed_64u_config8_s_w8_V
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/dense_array_array_ap_fixed_16_6_5_3_0_1u_config12_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_array_array_ap_fixed_16_6_5_3_0_1u_config12_s
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config12_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config12_s
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config12_s_w12_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config12_s_w12_V_rom
+INFO: [VRFC 10-311] analyzing module dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config12_s_w12_V
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d11_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d11_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w16_d11_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d11_A_x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d11_A_x_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w16_d11_A_x
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d1_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d1_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w16_d1_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d23_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d23_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w16_d23_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d23_A_x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d23_A_x_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w16_d23_A_x
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d3_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d3_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w16_d3_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d3_A_x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d3_A_x_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w16_d3_A_x
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d49_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d49_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w16_d49_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d49_A_x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d49_A_x_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w16_d49_A_x
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d99_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d99_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d99_A_x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w16_d99_A_x
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/global_pooling1d_cl_array_array_ap_fixed_64u_config10_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module global_pooling1d_cl_array_array_ap_fixed_64u_config10_s
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mul_mul_16s_10s_26_3_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mul_mul_16s_10s_26_3_1_DSP48_1
+INFO: [VRFC 10-311] analyzing module myproject_mul_mul_16s_10s_26_3_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mul_mul_16s_16s_26_3_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mul_mul_16s_16s_26_3_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module myproject_mul_mul_16s_16s_26_3_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mul_mul_16s_8s_24_3_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mul_mul_16s_8s_24_3_1_DSP48_2
+INFO: [VRFC 10-311] analyzing module myproject_mul_mul_16s_8s_24_3_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mux_1287_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mux_1287_16_1_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mux_164_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mux_164_16_1_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mux_164_5_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mux_164_5_1_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mux_325_9_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mux_325_9_1_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mux_32_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mux_32_16_1_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mux_42_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mux_42_16_1_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mux_646_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mux_646_16_1_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mux_83_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mux_83_16_1_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mux_83_3_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mux_83_3_1_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/pooling1d_cl_array_array_ap_fixed_16u_config4_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pooling1d_cl_array_array_ap_fixed_16u_config4_s
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/pooling1d_cl_array_array_ap_fixed_16u_config4_s_pool_tablbkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pooling1d_cl_array_array_ap_fixed_16u_config4_s_pool_tablbkb_rom
+INFO: [VRFC 10-311] analyzing module pooling1d_cl_array_array_ap_fixed_16u_config4_s_pool_tablbkb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/pooling1d_cl_array_array_ap_fixed_32u_config7_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pooling1d_cl_array_array_ap_fixed_32u_config7_s
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/pooling1d_cl_array_array_ap_fixed_32u_config7_s_pool_tablcud.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pooling1d_cl_array_array_ap_fixed_32u_config7_s_pool_tablcud_rom
+INFO: [VRFC 10-311] analyzing module pooling1d_cl_array_array_ap_fixed_32u_config7_s_pool_tablcud
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/regslice_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regslice_both
+INFO: [VRFC 10-311] analyzing module regslice_forward
+INFO: [VRFC 10-311] analyzing module regslice_reverse
+INFO: [VRFC 10-311] analyzing module regslice_both_w1
+INFO: [VRFC 10-311] analyzing module regslice_forward_w1
+INFO: [VRFC 10-311] analyzing module regslice_reverse_w1
+INFO: [VRFC 10-311] analyzing module ibuf
+INFO: [VRFC 10-311] analyzing module obuf
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/relu_array_array_ap_fixed_16u_relu_config3_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module relu_array_array_ap_fixed_16u_relu_config3_s
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/relu_array_array_ap_fixed_32u_relu_config6_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module relu_array_array_ap_fixed_32u_relu_config6_s
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/relu_array_array_ap_fixed_64u_relu_config9_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module relu_array_array_ap_fixed_64u_relu_config9_s
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/sigmoid_array_array_ap_fixed_1u_sigmoid_config13_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigmoid_array_array_ap_fixed_1u_sigmoid_config13_s
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/sigmoid_array_array_ap_fixed_1u_sigmoid_config13_s_sigmoidEe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigmoid_array_array_ap_fixed_1u_sigmoid_config13_s_sigmoidEe_rom
+INFO: [VRFC 10-311] analyzing module sigmoid_array_array_ap_fixed_1u_sigmoid_config13_s_sigmoidEe
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/start_for_conv_1d_cl_array_array_ap_fixed_32u_config5_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_conv_1d_cl_array_array_ap_fixed_32u_config5_U0_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_conv_1d_cl_array_array_ap_fixed_32u_config5_U0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/start_for_conv_1d_cl_array_array_ap_fixed_64u_config8_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_conv_1d_cl_array_array_ap_fixed_64u_config8_U0_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_conv_1d_cl_array_array_ap_fixed_64u_config8_U0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/start_for_dense_array_array_ap_fixed_16_6_5_3_0_1u_configfYi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_dense_array_array_ap_fixed_16_6_5_3_0_1u_configfYi_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_dense_array_array_ap_fixed_16_6_5_3_0_1u_configfYi
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/start_for_global_pooling1d_cl_array_array_ap_fixed_64u_coeOg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_global_pooling1d_cl_array_array_ap_fixed_64u_coeOg_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_global_pooling1d_cl_array_array_ap_fixed_64u_coeOg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/start_for_pooling1d_cl_array_array_ap_fixed_16u_config4_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_pooling1d_cl_array_array_ap_fixed_16u_config4_U0_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_pooling1d_cl_array_array_ap_fixed_16u_config4_U0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/start_for_pooling1d_cl_array_array_ap_fixed_32u_config7_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_pooling1d_cl_array_array_ap_fixed_32u_config7_U0_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_pooling1d_cl_array_array_ap_fixed_32u_config7_U0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/start_for_relu_array_array_ap_fixed_16u_relu_config3_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_relu_array_array_ap_fixed_16u_relu_config3_U0_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_relu_array_array_ap_fixed_16u_relu_config3_U0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/start_for_relu_array_array_ap_fixed_32u_relu_config6_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_relu_array_array_ap_fixed_32u_relu_config6_U0_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_relu_array_array_ap_fixed_32u_relu_config6_U0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/start_for_relu_array_array_ap_fixed_64u_relu_config9_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_relu_array_array_ap_fixed_64u_relu_config9_U0_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_relu_array_array_ap_fixed_64u_relu_config9_U0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/start_for_sigmoid_array_array_ap_fixed_1u_sigmoid_config1g8j.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_sigmoid_array_array_ap_fixed_1u_sigmoid_config1g8j_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_sigmoid_array_array_ap_fixed_1u_sigmoid_config1g8j
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/steph/Desktop/HLS4ML_NeutDetector/tools/xilinx/Neutrino12/Neutrino12.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

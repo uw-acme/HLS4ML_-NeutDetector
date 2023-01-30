@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7vx690tffg1761-2" LaunchTime="1675035199">
+  <File Type="PA-TCL" Name="myproject.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="myproject_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="myproject_reports.tcl"/>
+  <File Type="RDS-RDS" Name="myproject.vds"/>
+  <File Type="RDS-UTIL" Name="myproject_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="myproject_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="myproject.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="myproject_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="myproject_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/Block_proc.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/compute_global_pool_array_array_ap_fixed_64u_config10_s.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/conv_1d_cl_array_array_ap_fixed_16u_config2_s.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/conv_1d_cl_array_array_ap_fixed_16u_config2_s_outidx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/conv_1d_cl_array_array_ap_fixed_16u_config2_s_w2_V.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/conv_1d_cl_array_array_ap_fixed_32u_config5_s.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/conv_1d_cl_array_array_ap_fixed_32u_config5_s_w5_V.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/conv_1d_cl_array_array_ap_fixed_64u_config8_s.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/conv_1d_cl_array_array_ap_fixed_64u_config8_s_w8_V.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/dense_array_array_ap_fixed_16_6_5_3_0_1u_config12_s.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config12_s.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config12_s_w12_V.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d11_A.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d11_A_x.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d1_A.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d23_A.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d23_A_x.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d3_A.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d3_A_x.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d49_A.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d49_A_x.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d99_A.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d99_A_x.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/global_pooling1d_cl_array_array_ap_fixed_64u_config10_s.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mul_mul_16s_10s_26_3_1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mul_mul_16s_16s_26_3_1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mul_mul_16s_8s_24_3_1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mux_1287_16_1_1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mux_164_16_1_1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mux_164_5_1_1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mux_325_9_1_1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mux_32_16_1_1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mux_42_16_1_1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mux_646_16_1_1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mux_83_16_1_1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mux_83_3_1_1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/pooling1d_cl_array_array_ap_fixed_16u_config4_s.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/pooling1d_cl_array_array_ap_fixed_16u_config4_s_pool_tablbkb.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/pooling1d_cl_array_array_ap_fixed_32u_config7_s.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/pooling1d_cl_array_array_ap_fixed_32u_config7_s_pool_tablcud.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/regslice_core.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/relu_array_array_ap_fixed_16u_relu_config3_s.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/relu_array_array_ap_fixed_32u_relu_config6_s.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/relu_array_array_ap_fixed_64u_relu_config9_s.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/sigmoid_array_array_ap_fixed_1u_sigmoid_config13_s.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/sigmoid_array_array_ap_fixed_1u_sigmoid_config13_s_sigmoidEe.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/start_for_conv_1d_cl_array_array_ap_fixed_32u_config5_U0.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/start_for_conv_1d_cl_array_array_ap_fixed_64u_config8_U0.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/start_for_dense_array_array_ap_fixed_16_6_5_3_0_1u_configfYi.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/start_for_global_pooling1d_cl_array_array_ap_fixed_64u_coeOg.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/start_for_pooling1d_cl_array_array_ap_fixed_16u_config4_U0.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/start_for_pooling1d_cl_array_array_ap_fixed_32u_config7_U0.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/start_for_relu_array_array_ap_fixed_16u_relu_config3_U0.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/start_for_relu_array_array_ap_fixed_32u_relu_config6_U0.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/start_for_relu_array_array_ap_fixed_64u_relu_config9_U0.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/start_for_sigmoid_array_array_ap_fixed_1u_sigmoid_config1g8j.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/conv_1d_cl_array_array_ap_fixed_16u_config2_s_outidx_rom.dat">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/conv_1d_cl_array_array_ap_fixed_32u_config5_s_w5_V_rom.dat">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config12_s_w12_V_rom.dat">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/pooling1d_cl_array_array_ap_fixed_16u_config4_s_pool_tablbkb_rom.dat">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/sigmoid_array_array_ap_fixed_1u_sigmoid_config13_s_sigmoidEe_rom.dat">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/pooling1d_cl_array_array_ap_fixed_32u_config7_s_pool_tablcud_rom.dat">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/conv_1d_cl_array_array_ap_fixed_64u_config8_s_w8_V_rom.dat">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/conv_1d_cl_array_array_ap_fixed_16u_config2_s_w2_V_rom.dat">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="myproject"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../../src/hdl/top.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

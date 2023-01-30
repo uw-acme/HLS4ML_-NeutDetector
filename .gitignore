@@ -1,3 +1,6 @@
 
 tools/xilinx/uplane-reuse16/uplane-reuse16.sim/sim_1/behav/xsim/xsim.dir/myproject_behav/xsimk.exe
 tools/xilinx/uplane-reuse16/uplane-reuse16.sim/sim_1/behav/xsim/xsim.dir/myproject_behav/obj/xsim.win64.a
+tools/xilinx/Neutrino12/Neutrino12.sim/sim_1/behav/xsim/xsim.dir/myproject_behav/obj/xsim.win64.a
+tools/xilinx/Neutrino12/Neutrino12.sim/sim_1/behav/xsim/xsim.dir/myproject_behav/xsimk.exe
+tools/xilinx/Neutrino12/Neutrino12.sim/sim_1/synth/timing/xsim/myproject_time_synth.sdf

@@ -1,0 +1,65 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/Block_proc.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/compute_global_pool_array_array_ap_fixed_64u_config10_s.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/conv_1d_cl_array_array_ap_fixed_16u_config2_s.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/conv_1d_cl_array_array_ap_fixed_16u_config2_s_outidx.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/conv_1d_cl_array_array_ap_fixed_16u_config2_s_w2_V.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/conv_1d_cl_array_array_ap_fixed_32u_config5_s.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/conv_1d_cl_array_array_ap_fixed_32u_config5_s_w5_V.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/conv_1d_cl_array_array_ap_fixed_64u_config8_s.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/conv_1d_cl_array_array_ap_fixed_64u_config8_s_w8_V.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/dense_array_array_ap_fixed_16_6_5_3_0_1u_config12_s.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config12_s.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/dense_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config12_s_w12_V.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d11_A.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d11_A_x.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d1_A.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d23_A.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d23_A_x.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d3_A.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d3_A_x.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d49_A.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d49_A_x.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d99_A.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/fifo_w16_d99_A_x.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/global_pooling1d_cl_array_array_ap_fixed_64u_config10_s.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mul_mul_16s_10s_26_3_1.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mul_mul_16s_16s_26_3_1.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mul_mul_16s_8s_24_3_1.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mux_1287_16_1_1.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mux_164_16_1_1.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mux_164_5_1_1.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mux_325_9_1_1.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mux_32_16_1_1.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mux_42_16_1_1.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mux_646_16_1_1.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mux_83_16_1_1.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject_mux_83_3_1_1.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/pooling1d_cl_array_array_ap_fixed_16u_config4_s.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/pooling1d_cl_array_array_ap_fixed_16u_config4_s_pool_tablbkb.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/pooling1d_cl_array_array_ap_fixed_32u_config7_s.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/pooling1d_cl_array_array_ap_fixed_32u_config7_s_pool_tablcud.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/regslice_core.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/relu_array_array_ap_fixed_16u_relu_config3_s.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/relu_array_array_ap_fixed_32u_relu_config6_s.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/relu_array_array_ap_fixed_64u_relu_config9_s.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/sigmoid_array_array_ap_fixed_1u_sigmoid_config13_s.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/sigmoid_array_array_ap_fixed_1u_sigmoid_config13_s_sigmoidEe.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/start_for_conv_1d_cl_array_array_ap_fixed_32u_config5_U0.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/start_for_conv_1d_cl_array_array_ap_fixed_64u_config8_U0.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/start_for_dense_array_array_ap_fixed_16_6_5_3_0_1u_configfYi.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/start_for_global_pooling1d_cl_array_array_ap_fixed_64u_coeOg.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/start_for_pooling1d_cl_array_array_ap_fixed_16u_config4_U0.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/start_for_pooling1d_cl_array_array_ap_fixed_32u_config7_U0.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/start_for_relu_array_array_ap_fixed_16u_relu_config3_U0.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/start_for_relu_array_array_ap_fixed_32u_relu_config6_U0.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/start_for_relu_array_array_ap_fixed_64u_relu_config9_U0.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/start_for_sigmoid_array_array_ap_fixed_1u_sigmoid_config1g8j.v" \
+"../../../../../../../src/hdl/uplane_reuse12_implementation/myproject_prj/solution1/impl/verilog/myproject.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

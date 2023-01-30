@@ -68,6 +68,16 @@ void myproject(
     #pragma HLS ARRAY_PARTITION variable=layer3_out complete dim=0
     nnet::relu<layer2_t, layer3_t, relu_config3>(layer2_out, layer3_out); // conv1d_relu
 
+    // looking at the inputs of the first max pooling
+    for (int i = 0; i < 99; i++) {
+        std::cout << layer2_out[i] << std::endl;
+    }
+    std::cout<< "output, max pooling ints" <<std::endl;
+    // looking at the inputs of the first max pooling
+    for (int i = 0; i < 99; i++) {
+        std::cout << layer3_out[i] << std::endl;
+    }
+
     layer4_t layer4_out[N_OUTPUTS_4*N_FILT_4];
     #pragma HLS ARRAY_PARTITION variable=layer4_out complete dim=0
     nnet::pooling1d_cl<layer3_t, layer4_t, config4>(layer3_out, layer4_out); // max_pooling1d
@@ -135,6 +145,10 @@ int main(int argc, char** argv) {
 //             std::cout << str.erase(str.find('.'), 1) << std::endl;
 //         }
 //     }
+
+    for (int i = 0; i < 64; i++) {
+        std::cout << inputVals[i] << std::endl;
+    }
 
    myproject(inputVals, outputVals, const_size_in_1, const_size_out_1);
 
