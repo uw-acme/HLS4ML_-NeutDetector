@@ -69,14 +69,14 @@ void myproject(
     nnet::relu<layer2_t, layer3_t, relu_config3>(layer2_out, layer3_out); // conv1d_relu
 
     // looking at the inputs of the first max pooling
-    for (int i = 0; i < 99; i++) {
-        std::cout << layer2_out[i] << std::endl;
-    }
-    std::cout<< "output, max pooling ints" <<std::endl;
-    // looking at the inputs of the first max pooling
-    for (int i = 0; i < 99; i++) {
-        std::cout << layer3_out[i] << std::endl;
-    }
+    // for (int i = 0; i < 99; i++) {
+    //     std::cout << layer2_out[i] << std::endl;
+    // }
+    // std::cout<< "output, max pooling ints" <<std::endl;
+    // // looking at the inputs of the first max pooling
+    // for (int i = 0; i < 99; i++) {
+    //     std::cout << layer3_out[i] << std::endl;
+    // }
 
     layer4_t layer4_out[N_OUTPUTS_4*N_FILT_4];
     #pragma HLS ARRAY_PARTITION variable=layer4_out complete dim=0

@@ -1,10 +1,12 @@
 module max_pooling #(
-    parameter pooling_size=2, parameter n_in=8, parameter n_out=5
+       parameter pooling_size=2, // pool size == stride_width
+       parameter n_in=16,         // input bit width
+       parameter n_out=16         // output bit width
     ) (
-        data, res
+        data, res                // inputs/output declarations
     );
-    input logic [n_in:0] data;
-    output logic [n_out:0] res;
+    input logic [n_in:0] data;   // declaring input data
+    output logic [n_out:0] res;  // declaring output results
 
     
 endmodule
