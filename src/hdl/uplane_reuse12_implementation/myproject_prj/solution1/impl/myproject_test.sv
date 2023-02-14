@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+`timescale 1ns/100ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -105,14 +105,14 @@ myproject dut (
 //    end
 
     initial begin
-        conv1d_input_V_data_0_V_TDATA <= 16'd0001;
+        conv1d_input_V_data_0_V_TDATA <= 16'd1001;
         ap_rst_n <= 0;  ap_start <= 0; @(posedge ap_clk);
         ap_rst_n <= 1;                 @(posedge ap_clk);
 //        while (ap_idle != 1) begin
 //            @(posedge ap_clk);
 //        end
         
-        ap_start <= 1;
+        ap_start <= 1; @(posedge ap_clk);
         conv1d_input_V_data_0_V_TVALID <= 1;
 // input_1_V_data_0_V_TVALID <=1;  input_1_V_data_0_V_TDATA <= 16'd1; repeat (300)@(posedge ap_clk);
 //            layer6_out_V_data_0_V_TREADY <= 1; layer6_out_V_data_1_V_TREADY <= 1; layer6_out_V_data_2_V_TREADY <= 1; layer6_out_V_data_3_V_TREADY <= 1;
@@ -140,7 +140,7 @@ myproject dut (
 //            layer6_out_V_data_9_V_TREADY <= 1; @(posedge ap_clk);
             
         //input_1_V_data_0_V_TDATA <= 16'b1111_0000_0000_0001;
-        repeat(500) @(posedge ap_clk);
+        repeat(5) @(posedge ap_clk);
         $stop;
    
     end

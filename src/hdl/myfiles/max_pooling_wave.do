@@ -1,10 +1,17 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate /max_pooling_testbench/dut/pooling_size
-add wave -noupdate /max_pooling_testbench/dut/n_in
-add wave -noupdate /max_pooling_testbench/dut/n_out
-add wave -noupdate /max_pooling_testbench/dut/data
-add wave -noupdate /max_pooling_testbench/dut/res
+add wave -noupdate -radix decimal /max_pooling_testbench/dut/n_in
+add wave -noupdate -radix decimal /max_pooling_testbench/dut/n_out
+add wave -noupdate -radix decimal /max_pooling_testbench/dut/clk
+add wave -noupdate -radix decimal /max_pooling_testbench/dut/enable
+add wave -noupdate -radix decimal /max_pooling_testbench/dut/input1
+add wave -noupdate -radix decimal /max_pooling_testbench/dut/input2
+add wave -noupdate -radix decimal /max_pooling_testbench/dut/input3
+add wave -noupdate -radix decimal /max_pooling_testbench/dut/input4
+add wave -noupdate -radix binary /max_pooling_testbench/dut/done
+add wave -noupdate -radix decimal /max_pooling_testbench/dut/output_data
+add wave -noupdate -radix decimal /max_pooling_testbench/dut/max1
+add wave -noupdate -radix decimal /max_pooling_testbench/dut/max2
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {0 ps} 0}
 quietly wave cursor active 0
