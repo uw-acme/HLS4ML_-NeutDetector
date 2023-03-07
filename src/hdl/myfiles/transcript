@@ -2,370 +2,239 @@
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:28:29 on Feb 07,2023
-# vlog -reportprogress 300 ./max_pooling.sv 
-# -- Compiling module max_pooling
-# ** Error: ./max_pooling.sv(46): (vlog-2110) Illegal reference to net "done".
-# ** Error: ./max_pooling.sv(49): (vlog-2110) Illegal reference to net "done".
-# ** Error: ./max_pooling.sv(52): (vlog-2110) Illegal reference to net "done".
-# ** Error: ./max_pooling.sv(55): (vlog-2110) Illegal reference to net "done".
-# -- Compiling module max_pooling_testbench
-# ** Error: (vlog-13069) ./max_pooling.sv(63): near "logic": syntax error, unexpected "SystemVerilog keyword 'logic'", expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: ./max_pooling.sv(75): (vlog-2730) Undefined variable: 'input1'.
-# End time: 10:28:29 on Feb 07,2023, Elapsed time: 0:00:00
-# Errors: 6, Warnings: 0
-# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 8
-# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./max_pooling.sv""
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:29:06 on Feb 07,2023
-# vlog -reportprogress 300 ./max_pooling.sv 
-# -- Compiling module max_pooling
-# -- Compiling module max_pooling_testbench
-# ** Error: (vlog-13069) ./max_pooling.sv(63): near "logic": syntax error, unexpected "SystemVerilog keyword 'logic'", expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: ./max_pooling.sv(75): (vlog-2730) Undefined variable: 'input1'.
-# End time: 10:29:06 on Feb 07,2023, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 8
-# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./max_pooling.sv""
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:32:27 on Feb 07,2023
-# vlog -reportprogress 300 ./max_pooling.sv 
-# -- Compiling module max_pooling
-# -- Compiling module max_pooling_testbench
-# ** Error: (vlog-13069) ./max_pooling.sv(63): near "logic": syntax error, unexpected "SystemVerilog keyword 'logic'", expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: ./max_pooling.sv(75): (vlog-2730) Undefined variable: 'input1'.
-# ** Error: ./max_pooling.sv(75): (vlog-2730) Undefined variable: 'input2'.
-# ** Error: ./max_pooling.sv(76): (vlog-2730) Undefined variable: 'input3'.
-# ** Error: ./max_pooling.sv(76): (vlog-2730) Undefined variable: 'input4'.
-# End time: 10:32:28 on Feb 07,2023, Elapsed time: 0:00:01
-# Errors: 5, Warnings: 0
-# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 8
-# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./max_pooling.sv""
-do run
-# Cannot open macro file: run
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:33:00 on Feb 07,2023
-# vlog -reportprogress 300 ./max_pooling.sv 
-# -- Compiling module max_pooling
-# -- Compiling module max_pooling_testbench
+# Start time: 08:27:59 on Mar 07,2023
+# vlog -reportprogress 300 ./fifo.sv 
+# -- Compiling module fifo
+# -- Compiling module fifo_control
 # 
 # Top level modules:
-# 	max_pooling_testbench
-# End time: 10:33:00 on Feb 07,2023, Elapsed time: 0:00:00
+# 	fifo
+# End time: 08:27:59 on Mar 07,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work max_pooling_testbench 
-# Start time: 10:33:00 on Feb 07,2023
-# Loading sv_std.std
-# Loading work.max_pooling_testbench
-# Loading work.max_pooling
-# ** Error (suppressible): (vsim-12003) ./max_pooling.sv(55): Variable '/max_pooling_testbench/dut/done' written by continuous and procedural assignments. See ./max_pooling.sv(66).
-#    Time: 0 ps  Iteration: 0  Instance: /max_pooling_testbench/dut File: ./max_pooling.sv
-# ** Error (suppressible): (vsim-12003) ./max_pooling.sv(52): Variable '/max_pooling_testbench/dut/done' written by continuous and procedural assignments. See ./max_pooling.sv(66).
-#    Time: 0 ps  Iteration: 0  Instance: /max_pooling_testbench/dut File: ./max_pooling.sv
-# ** Error (suppressible): (vsim-12003) ./max_pooling.sv(49): Variable '/max_pooling_testbench/dut/done' written by continuous and procedural assignments. See ./max_pooling.sv(66).
-#    Time: 0 ps  Iteration: 0  Instance: /max_pooling_testbench/dut File: ./max_pooling.sv
-# ** Error (suppressible): (vsim-12003) ./max_pooling.sv(46): Variable '/max_pooling_testbench/dut/done' written by continuous and procedural assignments. See ./max_pooling.sv(66).
-#    Time: 0 ps  Iteration: 0  Instance: /max_pooling_testbench/dut File: ./max_pooling.sv
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./runlab.do PAUSED at line 16
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:35:14 on Feb 07,2023
-# vlog -reportprogress 300 ./max_pooling.sv 
-# -- Compiling module max_pooling
-# ** Error (suppressible): ./max_pooling.sv(19): (vlog-2388) 'done' already declared in this scope (max_pooling).
-# -- Compiling module max_pooling_testbench
-# End time: 10:35:14 on Feb 07,2023, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 8
-# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./max_pooling.sv""
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:35:43 on Feb 07,2023
-# vlog -reportprogress 300 ./max_pooling.sv 
-# -- Compiling module max_pooling
-# -- Compiling module max_pooling_testbench
+# Start time: 08:27:59 on Mar 07,2023
+# vlog -reportprogress 300 ./maxPooling_Streamed.sv 
+# -- Compiling module max_pooling_top
+# -- Compiling module maxPooling_Streamed
+# ** Warning: ./maxPooling_Streamed.sv(127): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module max_pooling_top_testbench
 # 
 # Top level modules:
-# 	max_pooling_testbench
-# End time: 10:35:43 on Feb 07,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work max_pooling_testbench 
-# Start time: 10:33:00 on Feb 07,2023
+# 	max_pooling_top_testbench
+# End time: 08:27:59 on Mar 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work max_pooling_top_testbench 
+# Start time: 08:27:59 on Mar 07,2023
 # Loading sv_std.std
-# Loading work.max_pooling_testbench
-# Loading work.max_pooling
+# Loading work.max_pooling_top_testbench
+# Loading work.max_pooling_top
+# Loading work.maxPooling_Streamed
+# Loading work.fifo
+# Loading work.fifo_control
 # WARNING: No extended dataflow license exists
-# ** Error: (vish-4014) No objects found matching '/max_pooling_testbench/dut/pooling_size'.
-# Executing ONERROR command at macro ./max_pooling_wave.do line 3
-# ** Error: (vish-4014) No objects found matching '/max_pooling_testbench/dut/data'.
-# Executing ONERROR command at macro ./max_pooling_wave.do line 6
-# ** Error: (vish-4014) No objects found matching '/max_pooling_testbench/dut/res'.
-# Executing ONERROR command at macro ./max_pooling_wave.do line 7
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./max_pooling.sv(83)
-#    Time: 650 ps  Iteration: 1  Instance: /max_pooling_testbench
-# Break in Module max_pooling_testbench at ./max_pooling.sv line 83
-add wave -position end  sim:/max_pooling_testbench/dut/n_in
-add wave -position end  sim:/max_pooling_testbench/dut/n_out
-add wave -position end  sim:/max_pooling_testbench/dut/clk
-add wave -position end  sim:/max_pooling_testbench/dut/enable
-add wave -position end  sim:/max_pooling_testbench/dut/reset
-add wave -position end  sim:/max_pooling_testbench/dut/input1
-add wave -position end  sim:/max_pooling_testbench/dut/input2
-add wave -position end  sim:/max_pooling_testbench/dut/input3
-add wave -position end  sim:/max_pooling_testbench/dut/input4
-add wave -position end  sim:/max_pooling_testbench/dut/done
-add wave -position end  sim:/max_pooling_testbench/dut/output_data
-add wave -position end  sim:/max_pooling_testbench/dut/max1
-add wave -position end  sim:/max_pooling_testbench/dut/max2
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/myfiles/max_pooling_wave.do
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/myfiles/max_pooling_wave.do
+# ** Note: $stop    : ./maxPooling_Streamed.sv(322)
+#    Time: 3950 ps  Iteration: 1  Instance: /max_pooling_top_testbench
+# Break in Module max_pooling_top_testbench at ./maxPooling_Streamed.sv line 322
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:37:13 on Feb 07,2023
-# vlog -reportprogress 300 ./max_pooling.sv 
-# -- Compiling module max_pooling
-# -- Compiling module max_pooling_testbench
+# Start time: 08:29:16 on Mar 07,2023
+# vlog -reportprogress 300 ./fifo.sv 
+# -- Compiling module fifo
+# -- Compiling module fifo_control
 # 
 # Top level modules:
-# 	max_pooling_testbench
-# End time: 10:37:14 on Feb 07,2023, Elapsed time: 0:00:01
+# 	fifo
+# End time: 08:29:16 on Mar 07,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 10:37:18 on Feb 07,2023, Elapsed time: 0:04:18
-# Errors: 13, Warnings: 1
-# vsim -voptargs=""+acc"" -t 1ps -lib work max_pooling_testbench 
-# Start time: 10:37:18 on Feb 07,2023
-# Loading sv_std.std
-# Loading work.max_pooling_testbench
-# Loading work.max_pooling
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./max_pooling.sv(83)
-#    Time: 650 ps  Iteration: 1  Instance: /max_pooling_testbench
-# Break in Module max_pooling_testbench at ./max_pooling.sv line 83
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:38:22 on Feb 07,2023
-# vlog -reportprogress 300 ./max_pooling.sv 
-# -- Compiling module max_pooling
-# -- Compiling module max_pooling_testbench
+# Start time: 08:29:16 on Mar 07,2023
+# vlog -reportprogress 300 ./maxPooling_Streamed.sv 
+# -- Compiling module max_pooling_top
+# -- Compiling module maxPooling_Streamed
+# ** Warning: ./maxPooling_Streamed.sv(127): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module max_pooling_top_testbench
 # 
 # Top level modules:
-# 	max_pooling_testbench
-# End time: 10:38:23 on Feb 07,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# End time: 10:38:26 on Feb 07,2023, Elapsed time: 0:01:08
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work max_pooling_testbench 
-# Start time: 10:38:26 on Feb 07,2023
+# 	max_pooling_top_testbench
+# End time: 08:29:17 on Mar 07,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# End time: 08:29:22 on Mar 07,2023, Elapsed time: 0:01:23
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work max_pooling_top_testbench 
+# Start time: 08:29:22 on Mar 07,2023
 # Loading sv_std.std
-# Loading work.max_pooling_testbench
-# Loading work.max_pooling
-# ** Error: (vish-4014) No objects found matching '/max_pooling_testbench/dut/reset'.
-# Executing ONERROR command at macro ./max_pooling_wave.do line 7
+# Loading work.max_pooling_top_testbench
+# Loading work.max_pooling_top
+# Loading work.maxPooling_Streamed
+# Loading work.fifo
+# Loading work.fifo_control
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./max_pooling.sv(83)
-#    Time: 650 ps  Iteration: 1  Instance: /max_pooling_testbench
-# Break in Module max_pooling_testbench at ./max_pooling.sv line 83
+# ** Note: $stop    : ./maxPooling_Streamed.sv(322)
+#    Time: 3950 ps  Iteration: 1  Instance: /max_pooling_top_testbench
+# Break in Module max_pooling_top_testbench at ./maxPooling_Streamed.sv line 322
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:39:40 on Feb 07,2023
-# vlog -reportprogress 300 ./max_pooling.sv 
-# -- Compiling module max_pooling
-# ** Error (suppressible): (vlog-7061) ./max_pooling.sv(52): Variable 'done' driven in an always_ff block, may not be driven by any other process. See ./max_pooling.sv(25).
-# ** Error (suppressible): (vlog-7061) ./max_pooling.sv(55): Variable 'done' driven in an always_ff block, may not be driven by any other process. See ./max_pooling.sv(25).
-# ** Error (suppressible): (vlog-7061) ./max_pooling.sv(58): Variable 'done' driven in an always_ff block, may not be driven by any other process. See ./max_pooling.sv(25).
-# ** Error (suppressible): (vlog-7061) ./max_pooling.sv(61): Variable 'done' driven in an always_ff block, may not be driven by any other process. See ./max_pooling.sv(25).
-# -- Compiling module max_pooling_testbench
-# End time: 10:39:40 on Feb 07,2023, Elapsed time: 0:00:00
-# Errors: 4, Warnings: 0
-# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 8
-# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./max_pooling.sv""
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:40:02 on Feb 07,2023
-# vlog -reportprogress 300 ./max_pooling.sv 
-# -- Compiling module max_pooling
-# ** Error (suppressible): (vlog-7061) ./max_pooling.sv(52): Variable 'done' driven in an always_ff block, may not be driven by any other process. See ./max_pooling.sv(25).
-# ** Error (suppressible): (vlog-7061) ./max_pooling.sv(55): Variable 'done' driven in an always_ff block, may not be driven by any other process. See ./max_pooling.sv(25).
-# ** Error (suppressible): (vlog-7061) ./max_pooling.sv(58): Variable 'done' driven in an always_ff block, may not be driven by any other process. See ./max_pooling.sv(25).
-# ** Error (suppressible): (vlog-7061) ./max_pooling.sv(61): Variable 'done' driven in an always_ff block, may not be driven by any other process. See ./max_pooling.sv(25).
-# -- Compiling module max_pooling_testbench
-# End time: 10:40:02 on Feb 07,2023, Elapsed time: 0:00:00
-# Errors: 4, Warnings: 0
-# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 8
-# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./max_pooling.sv""
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:41:08 on Feb 07,2023
-# vlog -reportprogress 300 ./max_pooling.sv 
-# -- Compiling module max_pooling
-# -- Compiling module max_pooling_testbench
+# Start time: 08:31:30 on Mar 07,2023
+# vlog -reportprogress 300 ./fifo.sv 
+# -- Compiling module fifo
+# -- Compiling module fifo_control
 # 
 # Top level modules:
-# 	max_pooling_testbench
-# End time: 10:41:08 on Feb 07,2023, Elapsed time: 0:00:00
+# 	fifo
+# End time: 08:31:30 on Mar 07,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 10:41:11 on Feb 07,2023, Elapsed time: 0:02:45
-# Errors: 9, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work max_pooling_testbench 
-# Start time: 10:41:12 on Feb 07,2023
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:31:30 on Mar 07,2023
+# vlog -reportprogress 300 ./maxPooling_Streamed.sv 
+# -- Compiling module max_pooling_top
+# -- Compiling module maxPooling_Streamed
+# ** Warning: ./maxPooling_Streamed.sv(127): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module max_pooling_top_testbench
+# 
+# Top level modules:
+# 	max_pooling_top_testbench
+# End time: 08:31:30 on Mar 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 08:31:37 on Mar 07,2023, Elapsed time: 0:02:15
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work max_pooling_top_testbench 
+# Start time: 08:31:37 on Mar 07,2023
 # Loading sv_std.std
-# Loading work.max_pooling_testbench
-# Loading work.max_pooling
-# ** Error: (vish-4014) No objects found matching '/max_pooling_testbench/dut/reset'.
-# Executing ONERROR command at macro ./max_pooling_wave.do line 7
+# Loading work.max_pooling_top_testbench
+# Loading work.max_pooling_top
+# Loading work.maxPooling_Streamed
+# Loading work.fifo
+# Loading work.fifo_control
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./max_pooling.sv(91)
-#    Time: 650 ps  Iteration: 1  Instance: /max_pooling_testbench
-# Break in Module max_pooling_testbench at ./max_pooling.sv line 91
+# ** Note: $stop    : ./maxPooling_Streamed.sv(322)
+#    Time: 3950 ps  Iteration: 1  Instance: /max_pooling_top_testbench
+# Break in Module max_pooling_top_testbench at ./maxPooling_Streamed.sv line 322
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:41:45 on Feb 07,2023
-# vlog -reportprogress 300 ./max_pooling.sv 
-# -- Compiling module max_pooling
-# -- Compiling module max_pooling_testbench
+# Start time: 08:45:14 on Mar 07,2023
+# vlog -reportprogress 300 ./fifo.sv 
+# -- Compiling module fifo
+# -- Compiling module fifo_control
 # 
 # Top level modules:
-# 	max_pooling_testbench
-# End time: 10:41:45 on Feb 07,2023, Elapsed time: 0:00:00
+# 	fifo
+# End time: 08:45:15 on Mar 07,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# End time: 10:42:12 on Feb 07,2023, Elapsed time: 0:01:00
-# Errors: 3, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work max_pooling_testbench 
-# Start time: 10:42:12 on Feb 07,2023
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:45:15 on Mar 07,2023
+# vlog -reportprogress 300 ./maxPooling_Streamed.sv 
+# -- Compiling module max_pooling_top
+# -- Compiling module maxPooling_Streamed
+# ** Warning: ./maxPooling_Streamed.sv(107): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module max_pooling_top_testbench
+# 
+# Top level modules:
+# 	max_pooling_top_testbench
+# End time: 08:45:15 on Mar 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 08:45:18 on Mar 07,2023, Elapsed time: 0:13:41
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work max_pooling_top_testbench 
+# Start time: 08:45:18 on Mar 07,2023
 # Loading sv_std.std
-# Loading work.max_pooling_testbench
-# Loading work.max_pooling
-# ** Error: (vish-4014) No objects found matching '/max_pooling_testbench/dut/reset'.
-# Executing ONERROR command at macro ./max_pooling_wave.do line 7
+# Loading work.max_pooling_top_testbench
+# Loading work.max_pooling_top
+# Loading work.maxPooling_Streamed
+# Loading work.fifo
+# Loading work.fifo_control
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./max_pooling.sv(91)
-#    Time: 650 ps  Iteration: 1  Instance: /max_pooling_testbench
-# Break in Module max_pooling_testbench at ./max_pooling.sv line 91
+# ** Note: $stop    : ./maxPooling_Streamed.sv(291)
+#    Time: 3950 ps  Iteration: 1  Instance: /max_pooling_top_testbench
+# Break in Module max_pooling_top_testbench at ./maxPooling_Streamed.sv line 291
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:52:13 on Feb 07,2023
-# vlog -reportprogress 300 ./max_pooling.sv 
-# -- Compiling module max_pooling
-# -- Compiling module max_pooling_testbench
+# Start time: 08:47:36 on Mar 07,2023
+# vlog -reportprogress 300 ./fifo.sv 
+# -- Compiling module fifo
+# -- Compiling module fifo_control
 # 
 # Top level modules:
-# 	max_pooling_testbench
-# End time: 10:52:13 on Feb 07,2023, Elapsed time: 0:00:00
+# 	fifo
+# End time: 08:47:36 on Mar 07,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 10:52:17 on Feb 07,2023, Elapsed time: 0:10:05
-# Errors: 3, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work max_pooling_testbench 
-# Start time: 10:52:17 on Feb 07,2023
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:47:36 on Mar 07,2023
+# vlog -reportprogress 300 ./maxPooling_Streamed.sv 
+# -- Compiling module max_pooling_top
+# -- Compiling module maxPooling_Streamed
+# ** Warning: ./maxPooling_Streamed.sv(107): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module max_pooling_top_testbench
+# 
+# Top level modules:
+# 	max_pooling_top_testbench
+# End time: 08:47:36 on Mar 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 08:47:40 on Mar 07,2023, Elapsed time: 0:02:22
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work max_pooling_top_testbench 
+# Start time: 08:47:40 on Mar 07,2023
 # Loading sv_std.std
-# Loading work.max_pooling_testbench
-# Loading work.max_pooling
-# ** Error: (vish-4014) No objects found matching '/max_pooling_testbench/dut/reset'.
-# Executing ONERROR command at macro ./max_pooling_wave.do line 7
+# Loading work.max_pooling_top_testbench
+# Loading work.max_pooling_top
+# Loading work.maxPooling_Streamed
+# Loading work.fifo
+# Loading work.fifo_control
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./max_pooling.sv(91)
-#    Time: 650 ps  Iteration: 1  Instance: /max_pooling_testbench
-# Break in Module max_pooling_testbench at ./max_pooling.sv line 91
+# ** Note: $stop    : ./maxPooling_Streamed.sv(291)
+#    Time: 3950 ps  Iteration: 1  Instance: /max_pooling_top_testbench
+# Break in Module max_pooling_top_testbench at ./maxPooling_Streamed.sv line 291
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:22:23 on Feb 07,2023
-# vlog -reportprogress 300 ./max_pooling.sv 
-# -- Compiling module max_pooling
-# -- Compiling module max_pooling_testbench
+# Start time: 09:04:14 on Mar 07,2023
+# vlog -reportprogress 300 ./fifo.sv 
+# -- Compiling module fifo
+# -- Compiling module fifo_control
 # 
 # Top level modules:
-# 	max_pooling_testbench
-# End time: 11:22:23 on Feb 07,2023, Elapsed time: 0:00:00
+# 	fifo
+# End time: 09:04:14 on Mar 07,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 11:22:25 on Feb 07,2023, Elapsed time: 0:30:08
-# Errors: 3, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work max_pooling_testbench 
-# Start time: 11:22:26 on Feb 07,2023
-# Loading sv_std.std
-# Loading work.max_pooling_testbench
-# Loading work.max_pooling
-# ** Error: (vish-4014) No objects found matching '/max_pooling_testbench/dut/reset'.
-# Executing ONERROR command at macro ./max_pooling_wave.do line 7
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./max_pooling.sv(97)
-#    Time: 950 ps  Iteration: 1  Instance: /max_pooling_testbench
-# Break in Module max_pooling_testbench at ./max_pooling.sv line 97
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/steph/Desktop/HLS4ML_NeutDetector/src/hdl/myfiles/max_pooling_wave.do
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:22:56 on Feb 07,2023
-# vlog -reportprogress 300 ./max_pooling.sv 
+# Start time: 09:04:14 on Mar 07,2023
+# vlog -reportprogress 300 ./maxPooling_Streamed.sv 
 # -- Compiling module max_pooling
-# -- Compiling module max_pooling_testbench
+# -- Compiling module maxPooling_Streamed
+# ** Warning: ./maxPooling_Streamed.sv(107): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module max_pooling_top_testbench
 # 
 # Top level modules:
-# 	max_pooling_testbench
-# End time: 11:22:56 on Feb 07,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 11:22:59 on Feb 07,2023, Elapsed time: 0:00:33
-# Errors: 3, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work max_pooling_testbench 
-# Start time: 11:22:59 on Feb 07,2023
+# 	max_pooling_top_testbench
+# End time: 09:04:14 on Mar 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 09:04:16 on Mar 07,2023, Elapsed time: 0:16:36
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work max_pooling_top_testbench 
+# Start time: 09:04:17 on Mar 07,2023
 # Loading sv_std.std
-# Loading work.max_pooling_testbench
+# Loading work.max_pooling_top_testbench
 # Loading work.max_pooling
+# Loading work.maxPooling_Streamed
+# Loading work.fifo
+# Loading work.fifo_control
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./max_pooling.sv(97)
-#    Time: 950 ps  Iteration: 1  Instance: /max_pooling_testbench
-# Break in Module max_pooling_testbench at ./max_pooling.sv line 97
-# End time: 11:23:45 on Feb 07,2023, Elapsed time: 0:00:46
-# Errors: 0, Warnings: 0
+# ** Note: $stop    : ./maxPooling_Streamed.sv(291)
+#    Time: 3950 ps  Iteration: 1  Instance: /max_pooling_top_testbench
+# Break in Module max_pooling_top_testbench at ./maxPooling_Streamed.sv line 291

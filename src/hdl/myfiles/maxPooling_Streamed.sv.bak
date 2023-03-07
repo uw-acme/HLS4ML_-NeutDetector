@@ -1,0 +1,224 @@
+module max_pooling_top #(parameter LENGTH = 8)(
+	input logic clk, reset,
+    input logic [15:0] input_data, input_from_fifo,
+    output logic [15:0] output_data, output_to_fifo
+);
+	logic enable;
+	logic read, write;
+	maxPooling_Streamed calc (.clk, .reset, .enable, .write, .read, .input_data, .input_from_fifo,
+							  .output_data, .output_to_fifo );
+	fifo pooledValues (.clk, .reset, .write, .read, .output_to_fifo, .input_from_fifo);
+endmodule
+
+module maxPooling_Streamed (
+    input logic clk, reset, enable,
+    input logic [15:0] input_data, input_from_fifo,
+
+	output logic write, read,
+    output logic [15:0] output_data, output_to_fifo
+);
+    logic [15:0] temp;
+    logic [15:0] pooled;
+	
+	// // toggle enable
+	// always_ff @(posedge clk) begin
+	// 	if (reset) 
+	// 		enable <= 0;
+	// 	else 
+	// 		enable <= ~enable;
+	// end	
+
+	// hold the first input value
+    always_ff @(posedge clk) begin
+        if(enable)
+			temp <= input_data;
+		else 
+			temp <= temp;
+		
+    end
+
+	// make pooling comparison between the two values
+	always_ff @(posedge clk) begin
+		if (temp > input_data)
+			output_to_fifo <= temp;
+		else 
+			output_to_fifo <= input_data;
+
+		write <= 1;
+	end
+
+	// make pooling comparisons from 
+
+endmodule
+
+
+
+module fifo #(parameter LENGTH = 8, parameter word_size = 16, parameter addr_size = 5) (
+    input logic clk, reset, write, read,
+    input logic [word_size-1:0] output_to_fifo,
+    output	logic [word_size-1:0] input_from_fifo
+);
+    logic [15:0] fifo_buffer [0:(LENGTH/2)];
+    logic wr_en, empty, full;
+    logic [addr_size-1:0] waddr, raddr;
+
+    fifo_control control (.clk, .reset, .read, .write, .wr_en, .empty, .full,
+                            .readAddr(raddr), .writeAddr(waddr));
+
+    
+
+	// DFFs to control data input
+	always_ff @(posedge clk) begin
+		if (wr_en) begin
+			fifo_buffer[waddr] <= output_to_fifo;
+		end
+		input_from_fifo <= fifo_buffer[raddr];
+	end
+endmodule
+
+
+
+module fifo_control #(parameter depth = 4) (
+    input logic clk, reset,
+	input logic read, write,
+	output logic wr_en,
+	output logic empty, full,
+	output logic [depth-1:0] readAddr, writeAddr
+);
+    logic [depth-1:0] readAddr1, writeAddr1, read_next, write_next; // current pointers // next pointers;
+	logic n_e, n_f; // pointers to tell what is the next status for the system
+
+    enum logic [1:0] {NONE, READ, WRITE, R_W} ps, ns;
+
+    /*
+		The states of this FSM is the behavior that it is going to do. When 
+		it is supposed to read, it will to the read pointer, and the status 
+		will change depending on the position of the current pointers.
+	*/
+	always_comb begin
+		n_e = empty;
+		n_f = full;
+		case(ps)
+			NONE: 
+                if (read&~write&~empty) begin
+                    read_next   = readAddr1 + 1;
+                    write_next  = writeAddr1;
+                    ns          = READ;
+                    if(read_next == writeAddr1)
+                        n_e = 1;
+                    if (full)
+                        n_f = 0;
+
+                end else if (~read&write&~full) begin
+                    read_next   = readAddr1;
+                    write_next  = writeAddr1 + 1;
+                    ns          = WRITE;    
+                    if(empty)
+                        n_e = 0;
+                    if(write_next == readAddr1)
+                        n_f = 1;            
+                end else if (read&write) begin
+                    read_next   = readAddr1+1;
+					write_next  = writeAddr1+1; 		
+                    ns          = R_W;    
+                end else begin
+                    read_next   = readAddr1;
+                    write_next  = writeAddr1; 	
+                    ns          = NONE;		
+				end
+            READ: begin
+                read_next   = readAddr1;
+                write_next  = writeAddr1;
+                if (read&write) begin
+                    ns = READ;
+                end else begin
+                    ns = NONE;
+                end
+                if(~empty) begin
+                    n_e = 0;
+                end else begin
+                    n_e = 1;
+                end
+            end
+            WRITE: begin
+                read_next   = readAddr1;
+                write_next  = writeAddr1;
+                if (read&write) begin
+                    ns = WRITE;
+                end else begin
+                    ns = NONE;
+                end
+                if(~full) begin
+                    n_f = 0;
+                end else begin
+                    n_f = 1;
+                end
+                if(empty) begin
+                    n_e = 1;
+                end else begin
+                    n_e = 0;
+                end
+            end
+            R_W: begin
+                read_next   = readAddr1;
+                write_next  = writeAddr1;
+                if (~read&~write) begin
+                    ns = NONE;
+                end else begin
+                    ns = R_W;
+                end
+            end
+        endcase
+    end
+
+    always_comb begin
+        writeAddr   = writeAddr1;
+        readAddr    = readAddr1;
+        wr_en       = ~full & write;
+    end
+    always_ff @(posedge clk) begin
+        if(reset) begin
+			readAddr1  <= '0;
+			writeAddr1  <= '0;
+		    empty       <= 1'b1;
+		    full        <= 1'b0;
+			ps          <= NONE;
+
+		end else begin
+			readAddr1   <= read_next;
+			writeAddr1  <= write_next;
+		    empty       <= n_e;
+			full        <= n_f;
+			ps          <= ns;
+		end
+    end
+
+endmodule
+
+
+
+module maxPooling_Streamed_testbench();
+    logic clk, reset, enable, read, write;
+    logic [15:0] input_data, input_from_fifo;
+    logic [15:0] output_data, output_to_fifo;
+
+    maxPooling_Streamed dut (.*);
+
+    parameter CLK_Period = 100;
+	
+	initial begin
+		clk <= 1'b0;
+		forever #(CLK_Period/2) clk <= ~clk;
+	end
+	
+	initial begin
+		reset <= 1;
+		input_data <= 16'd5;
+		enable <= 1;
+
+					@(posedge clk);
+
+
+
+	end
+endmodule
