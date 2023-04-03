@@ -2,8 +2,8 @@
 # Webtalk v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Thu Feb  2 12:28:11 2023
-# Process ID: 38892
+# Start of session at: Wed Mar  8 17:35:09 2023
+# Process ID: 44164
 # Current directory: C:/Users/steph/Desktop/HLS4ML_NeutDetector/tools/xilinx/Neutrino12/Neutrino12.sim/sim_1/behav/xsim
 # Command line: wbtcv.exe -mode batch -source C:/Users/steph/Desktop/HLS4ML_NeutDetector/tools/xilinx/Neutrino12/Neutrino12.sim/sim_1/behav/xsim/xsim.dir/myproject_test_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Users/steph/Desktop/HLS4ML_NeutDetector/tools/xilinx/Neutrino12/Neutrino12.sim/sim_1/behav/xsim/webtalk.log

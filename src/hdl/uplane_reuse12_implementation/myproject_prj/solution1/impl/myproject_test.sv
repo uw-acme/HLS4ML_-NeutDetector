@@ -106,8 +106,8 @@ myproject dut (
 
     initial begin
         conv1d_input_V_data_0_V_TDATA <= 16'd1001;
-        ap_rst_n <= 0;  ap_start <= 0; @(posedge ap_clk);
-        ap_rst_n <= 1;                 @(posedge ap_clk);
+        ap_rst_n <= 1;  ap_start <= 0; @(posedge ap_clk);
+        ap_rst_n <= 0;                 @(posedge ap_clk);
 //        while (ap_idle != 1) begin
 //            @(posedge ap_clk);
 //        end

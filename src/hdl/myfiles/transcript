@@ -238,3 +238,5 @@ do runlab.do
 # ** Note: $stop    : ./maxPooling_Streamed.sv(291)
 #    Time: 3950 ps  Iteration: 1  Instance: /max_pooling_top_testbench
 # Break in Module max_pooling_top_testbench at ./maxPooling_Streamed.sv line 291
+# End time: 23:00:48 on Mar 08,2023, Elapsed time: 37:56:31
+# Errors: 0, Warnings: 0
